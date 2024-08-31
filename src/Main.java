@@ -23,7 +23,8 @@ public class Main {
 
         //Mostrar por pantalla, separados por comas, los títulos de las películas de Steven Spielberg
         System.out.println("Punto #2");
-        String spielbergPeliculas = peliculas.stream().filter(p->p.getDirector().equals("Steven Spielberg")).map(Pelicula::getTitulo).collect(Collectors.joining(", ", "Peliculas de Steven Spielber: ","."));
+        String spielbergPeliculas = peliculas.stream().filter(p->p.getDirector().equals("Steven Spielberg"))
+                .map(Pelicula::getTitulo).collect(Collectors.joining(", ", "Peliculas de Steven Spielber: ","."));
 
         System.out.println(spielbergPeliculas);
         System.out.println();
